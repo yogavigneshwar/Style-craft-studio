@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tabBtns.forEach(b => b.classList.remove('active'));
                 serviceGrids.forEach(g => g.classList.remove('active'));
                 btn.classList.add('active');
-                const tabId = btn.getAttribute('data-tab');
+                const tabId = btn.getAttribute('data-target');
                 const targetGrid = document.getElementById(tabId);
                 if (targetGrid) targetGrid.classList.add('active');
             });
