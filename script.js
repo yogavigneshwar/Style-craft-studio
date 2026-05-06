@@ -42,8 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 serviceGrids.forEach(g => g.classList.remove('active'));
                 btn.classList.add('active');
                 const tabId = btn.getAttribute('data-target');
+                console.log('Switching to tab:', tabId);
                 const targetGrid = document.getElementById(tabId);
+                
                 if (targetGrid) {
+                    console.log('Found grid for:', tabId);
                     targetGrid.classList.add('active');
                     // Ensure cards are visible if they were hidden by the reveal animation
                     targetGrid.querySelectorAll('.service-card').forEach(card => {
