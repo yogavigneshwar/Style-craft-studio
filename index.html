@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Craft Saloon Studio | Premium Unisex Saloon</title>
+    <meta name="description" content="Style Craft Saloon Studio - A premium unisex saloon providing high-quality haircuts, facials, and spa treatments for gents and female.">
+    <!-- Google Fonts: Playfair Display & Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="logo.png" alt="Style Craft Studio Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact" class="btn-primary">Book Now</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="fade-in">Experience the Art of <span class="highlight">Grooming</span></h1>
+                <p class="fade-in delay-1">Where Elegance meets Excellence. Premium services for Gents & Ladies.</p>
+                <div class="hero-btns fade-in delay-2">
+                    <a href="#services" class="btn-outline">Explore Services</a>
+                    <a href="#contact" class="btn-gold">Book Appointment</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">About Our Studio</h2>
+                    <p>Style Craft Saloon Studio is a unisex sanctuary dedicated to the art of grooming and self-care. Our expert stylists and therapists combine tradition with modern techniques to deliver a truly premium experience.</p>
+                </div>
+                <div class="about-image">
+                    <div class="carousel glass">
+                        <div class="carousel-track">
+                            <div class="carousel-slide active"><img src="./studio-1.jpg" alt="Studio Interior 1"></div>
+                            <div class="carousel-slide"><img src="./studio-2.jpg" alt="Studio Interior 2"></div>
+                            <div class="carousel-slide"><img src="./studio-3.jpg" alt="Studio Interior 3"></div>
+                            <div class="carousel-slide"><img src="./studio-6.jpg" alt="Studio Interior 6"></div>
+                            <div class="carousel-slide"><img src="./studio-7.jpg" alt="Studio Interior 7"></div>
+                            <div class="carousel-slide"><img src="./studio-8.jpg" alt="Studio Interior 8"></div>
+                        </div>
+                        <button class="carousel-btn prev" aria-label="Previous Slide">&#10094;</button>
+                        <button class="carousel-btn next" aria-label="Next Slide">&#10095;</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title text-center">Our Premium Services</h2>
+                
+                <div class="service-tabs">
+                    <button class="tab-btn active" data-target="gents">Gents</button>
+                    <button class="tab-btn" data-target="ladies">Ladies</button>
+                </div>
+
+                <div class="service-content-wrapper">
+                    <!-- Gents Services -->
+                    <div id="gents" class="service-grid active">
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 0l6-6m0 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 0L6 15m12-9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 0l-6 6m0 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 0l6-6"/></svg>
+                            </div>
+                            <h3>Haircut</h3>
+                            <span class="price">₹125/-*</span>
+                            <p>Professional styling and cut.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6l2 2m0 0l7 7 3-3 7 7M5 8l14 14"/></svg>
+                            </div>
+                            <h3>Shave</h3>
+                            <span class="price">₹50/-*</span>
+                            <p>Smooth traditional shave.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+                            </div>
+                            <h3>Kids Haircut</h3>
+                            <span class="price">₹75/-*</span>
+                            <p>Gentle styling for children.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                            </div>
+                            <h3>De-tan</h3>
+                            <span class="price">₹200/-</span>
+                            <p>Remove skin tan effectively.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10A10 10 0 0 0 12 2zM12 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm0 12c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                            <h3>Facial</h3>
+                            <span class="price">₹400/-*</span>
+                            <p>Deep cleansing & rejuvenation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ladies Services -->
+                    <div id="ladies" class="service-grid">
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19c-4 0-7-3-7-7s3-7 7-7 7 3 7 7-3 7-7 7zM12 5v14M5 12h14"/></svg>
+                            </div>
+                            <h3>Threading</h3>
+                            <p>Perfectly shaped eyebrows and facial hair removal.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M5.64 18.36l-1.42 1.42M19.78 4.22l-1.42 1.42"/></svg>
+                            </div>
+                            <h3>De-tan</h3>
+                            <p>Restore your skin's natural glow.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                            </div>
+                            <h3>Bleach</h3>
+                            <p>Safe and effective skin brightening.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </div>
+                            <h3>Facial</h3>
+                            <p>Premium rejuvenation treatments for all skin types.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 18l-4-4h8l-4 4z"/></svg>
+                            </div>
+                            <h3>Waxing</h3>
+                            <p>Smooth, long-lasting hair removal.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11V7a5 5 0 0 1 10 0v4"/><path d="M5 11h14v10H5z"/></svg>
+                            </div>
+                            <h3>Manicure</h3>
+                            <p>Complete hand and nail care.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2z"/><path d="M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+                            </div>
+                            <h3>Pedicure</h3>
+                            <p>Relaxing foot spa and nail grooming.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 0l6-6m0 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 0L6 15m12-9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 0l-6 6m0 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 0l6-6"/></svg>
+                            </div>
+                            <h3>Haircut</h3>
+                            <p>Expert women's styling and cuts.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.5 1.5"/></svg>
+                            </div>
+                            <h3>Colouring</h3>
+                            <p>Premium hair color and highlights.</p>
+                        </div>
+                        <div class="service-card glass">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+                            </div>
+                            <h3>Hair Spa</h3>
+                            <p>Intensive nourishing treatment for vibrant hair.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container text-center">
+                <h2>Ready for a Transformation?</h2>
+                <p>Book your slot via WhatsApp or call us directly.</p>
+                <div class="cta-btns">
+                    <a href="https://wa.me/919361002259?text=Hi, I would like to book a service at Style Craft Studio" id="whatsapp-btn" class="btn-whatsapp">
+                        Book via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Style Craft Studio" class="footer-logo">
+                    <p>Elevating your style since 2024.</p>
+                    <a href="https://instagram.com/stylecraft_studio_" class="insta-link" target="_blank">@stylecraft_studio_</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Location</h4>
+                    <p>Style craft studio</p>
+                    <p>No.16, TH road, MR nagar</p>
+                    <p>Chennai 600118</p>
+                    <p style="margin-top: 1rem;">Phone: 9361002259</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Style Craft Saloon Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
