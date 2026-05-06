@@ -43,7 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.classList.add('active');
                 const tabId = btn.getAttribute('data-target');
                 const targetGrid = document.getElementById(tabId);
-                if (targetGrid) targetGrid.classList.add('active');
+                if (targetGrid) {
+                    targetGrid.classList.add('active');
+                    // Ensure cards are visible if they were hidden by the reveal animation
+                    targetGrid.querySelectorAll('.service-card').forEach(card => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    });
+                }
             });
         });
     }
